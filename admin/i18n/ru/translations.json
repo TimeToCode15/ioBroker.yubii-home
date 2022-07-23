@@ -1,0 +1,10 @@
+{
+    "Options": "Опции",
+    "IP": "IP",
+    "Port": "Порт",
+    "Name": "Имя",
+    "Yubii Home Gateway IP": "IP-адрес домашнего шлюза Yubii",
+    "IP of your Yubii Home Gateway": "IP-адрес вашего домашнего шлюза Yubii",
+    "Yubii Home Api Pin": "Юбии Хоум Апи Пин",
+    "Enter the Api Pin of the WebApi from the Yubii Home Gateway": "Введите PIN-код API WebApi с домашнего шлюза Yubii."
+}

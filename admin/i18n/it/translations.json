@@ -1,0 +1,10 @@
+{
+    "Options": "Opzioni",
+    "IP": "IP",
+    "Port": "Porta",
+    "Name": "Nome",
+    "Yubii Home Gateway IP": "Yubii Home Gateway IP",
+    "IP of your Yubii Home Gateway": "IP del tuo Yubii Home Gateway",
+    "Yubii Home Api Pin": "Pin Yubii Home Api",
+    "Enter the Api Pin of the WebApi from the Yubii Home Gateway": "Inserisci il Pin Api di WebApi da Yubii Home Gateway"
+}

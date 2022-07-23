@@ -1,100 +1,109 @@
 {
-	"common": {
-		"name": "yubii-home",
-		"version": "0.0.1",
-		"news": {
-			"0.0.1": {
-				"en": "initial release",
-				"de": "Erstveröffentlichung",
-				"ru": "Начальная версия",
-				"pt": "lançamento inicial",
-				"nl": "Eerste uitgave",
-				"fr": "Première version",
-				"it": "Versione iniziale",
-				"es": "Versión inicial",
-				"pl": "Pierwsze wydanie",
-				"zh-cn": "首次出版"
-			}
-		},
-		"title": "Yubii Home Connector",
-		"titleLang": {
-			"en": "Yubii Home Connector",
-			"de": "Yubii Home-Anschluss",
-			"ru": "Домашний разъем Юбии",
-			"pt": "Conector Yubii Home",
-			"nl": "Yubii Home-connector",
-			"fr": "Connecteur maison Yubii",
-			"it": "Connettore domestico Yubii",
-			"es": "Conector doméstico Yubii",
-			"pl": "Złącze domowe Yubii",
-			"zh-cn": "Yubii 家用连接器"
-		},
-		"desc": {
-			"en": "API Access to Yubii Home Connector",
-			"de": "API-Zugriff auf Yubii Home Connector",
-			"ru": "API-доступ к Yubii Home Connector",
-			"pt": "Acesso API ao conector inicial do Yubii",
-			"nl": "API-toegang tot Yubii Home Connector",
-			"fr": "Accès API au connecteur Yubii Home",
-			"it": "Accesso API a Yubii Home Connector",
-			"es": "Acceso API a Yubii Home Connector",
-			"pl": "Dostęp API do Yubii Home Connector",
-			"zh-cn": "访问 Yubii Home 连接器的 API"
-		},
-		"authors": [
-			"TimeToCode15 <f.s@gmx.at>"
-		],
-		"keywords": [
-			"yubii",
-			"home"
-		],
-		"license": "MIT",
-		"platform": "Javascript/Node.js",
-		"main": "main.js",
-		"icon": "yubii-home.png",
-		"enabled": true,
-		"extIcon": "https://raw.githubusercontent.com/TimeToCode15/ioBroker.yubii-home/main/admin/yubii-home.png",
-		"readme": "https://github.com/TimeToCode15/ioBroker.yubii-home/blob/main/README.md",
-		"loglevel": "info",
-		"mode": "daemon",
-		"type": "iot-systems",
-		"compact": true,
-		"connectionType": "local",
-		"dataSource": "poll",
-		"materialize": true,
-		"eraseOnUpload": true,
-		"dependencies": [
-			{
-				"js-controller": ">=2.0.0"
-			}
-		]
-	},
-	"native": {
-		"option1": true,
-		"option2": "42"
-	},
-	"objects": [],
-	"instanceObjects": [
-		{
-			"_id": "info",
-			"type": "channel",
-			"common": {
-				"name": "Information"
-			},
-			"native": {}
-		},
-		{
-			"_id": "info.connection",
-			"type": "state",
-			"common": {
-				"role": "indicator.connected",
-				"name": "Device or service connected",
-				"type": "boolean",
-				"read": true,
-				"write": false,
-				"def": false
-			},
-			"native": {}
-		}
-	]
+    "common": {
+        "name": "yubii-home",
+        "version": "0.0.1",
+        "news": {
+            "0.0.1": {
+                "en": "initial release",
+                "de": "Erstveröffentlichung",
+                "ru": "Начальная версия",
+                "pt": "lançamento inicial",
+                "nl": "Eerste uitgave",
+                "fr": "Première version",
+                "it": "Versione iniziale",
+                "es": "Versión inicial",
+                "pl": "Pierwsze wydanie",
+                "zh-cn": "首次出版"
+            }
+        },
+        "title": "Yubii Home Connector",
+        "titleLang": {
+            "en": "Yubii Home Connector",
+            "de": "Yubii Home-Anschluss",
+            "ru": "Домашний разъем Юбии",
+            "pt": "Conector Yubii Home",
+            "nl": "Yubii Home-connector",
+            "fr": "Connecteur maison Yubii",
+            "it": "Connettore domestico Yubii",
+            "es": "Conector doméstico Yubii",
+            "pl": "Złącze domowe Yubii",
+            "zh-cn": "Yubii 家用连接器"
+        },
+        "desc": {
+            "en": "API Access to Yubii Home Connector",
+            "de": "API-Zugriff auf Yubii Home Connector",
+            "ru": "API-доступ к Yubii Home Connector",
+            "pt": "Acesso API ao conector inicial do Yubii",
+            "nl": "API-toegang tot Yubii Home Connector",
+            "fr": "Accès API au connecteur Yubii Home",
+            "it": "Accesso API a Yubii Home Connector",
+            "es": "Acceso API a Yubii Home Connector",
+            "pl": "Dostęp API do Yubii Home Connector",
+            "zh-cn": "访问 Yubii Home 连接器的 API"
+        },
+        "authors": [
+            "TimeToCode15 <f.s@gmx.at>"
+        ],
+        "keywords": [
+            "yubii",
+            "home"
+        ],
+        "license": "MIT",
+        "platform": "Javascript/Node.js",
+        "main": "main.js",
+        "icon": "yubii-home.png",
+        "enabled": true,
+        "extIcon": "https://raw.githubusercontent.com/TimeToCode15/ioBroker.yubii-home/main/admin/yubii-home.png",
+        "readme": "https://github.com/TimeToCode15/ioBroker.yubii-home/blob/main/README.md",
+        "loglevel": "info",
+        "mode": "daemon",
+        "type": "iot-systems",
+        "compact": true,
+        "connectionType": "local",
+        "dataSource": "poll",
+        "materialize": true,
+        "eraseOnUpload": true,
+        "adminUI": {
+            "config": "json"
+        },
+        "dependencies": [
+            {
+                "js-controller": ">=2.0.0"
+            }
+        ],
+        "globalDependencies": [
+            {
+                "admin": ">=5.1.28"
+            }
+        ]
+    },
+    "native": {
+        "gatewayip": "",
+        "port": "443",
+        "apipin": ""
+    },
+    "objects": [],
+    "instanceObjects": [
+        {
+            "_id": "info",
+            "type": "channel",
+            "common": {
+                "name": "Information"
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.connection",
+            "type": "state",
+            "common": {
+                "role": "indicator.connected",
+                "name": "Device or service connected",
+                "type": "boolean",
+                "read": true,
+                "write": false,
+                "def": false
+            },
+            "native": {}
+        }
+    ]
 }
