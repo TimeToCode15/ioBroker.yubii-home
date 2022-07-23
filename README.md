@@ -13,7 +13,7 @@
 
 ## yubii-home adapter for ioBroker
 
-API Access to Yubii Home Connector
+API Access to Yubii Home Connector!
 
 ## Developer manual
 This section is intended for the developer. It can be deleted later
